@@ -15,3 +15,4 @@
 #import "IFTTTColorAnimation.h"
 #import "IFTTTCenterAnimation.h"
 #import "IFTTTTransformAnimation.h"
+#import "IFTTTRotationTransformAnimation.h"

@@ -14,5 +14,6 @@
 @property (nonatomic) UIColor * color;
 @property (nonatomic) CGPoint center;
 @property (nonatomic) CGAffineTransform transform;
+@property (nonatomic) double rotationAngle;
 
 @end
