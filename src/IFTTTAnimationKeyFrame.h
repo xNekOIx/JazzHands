@@ -27,11 +27,13 @@
 + (instancetype)keyFrameWithTime:(NSInteger)time andFrame:(CGRect)frame;
 + (instancetype)keyFrameWithTime:(NSInteger)time andHidden:(BOOL)hidden;
 + (instancetype)keyFrameWithTime:(NSInteger)time andColor:(UIColor*)color;
++ (instancetype)keyFrameWithTime:(NSInteger)time andRotation:(double)angle;
 
 - (id)initWithTime:(NSInteger)time andAlpha:(CGFloat)alpha;
 - (id)initWithTime:(NSInteger)time andFrame:(CGRect)frame;
 - (id)initWithTime:(NSInteger)time andHidden:(BOOL)hidden;
 - (id)initWithTime:(NSInteger)time andColor:(UIColor*)color;
+- (id)initWithTime:(NSInteger)time andRotation:(double)angle;
 
 @property (assign, nonatomic) NSInteger time;
 

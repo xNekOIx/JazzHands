@@ -146,6 +146,13 @@
     return keyFrame;
 }
 
++ (instancetype)keyFrameWithTime:(NSInteger)time andRotation:(double)angle;
+{
+    IFTTTAnimationKeyFrame *keyFrame = [[[self class] alloc] initWithTime: time
+                                                              andRotation: angle];
+    return keyFrame;
+}
+
 - (id)initWithTime:(NSInteger)time
 {
     self = [super init];
@@ -196,6 +203,17 @@
     
     if (self) {
         self.color = color;
+    }
+    
+    return self;
+}
+
+- (id)initWithTime:(NSInteger)time andRotation:(double)angle
+{
+    self = [self initWithTime:time];
+    
+    if (self) {
+        self.rotationAngle = angle;
     }
     
     return self;
