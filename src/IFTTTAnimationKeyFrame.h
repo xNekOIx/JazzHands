@@ -23,18 +23,21 @@
 + (NSArray *)keyFramesWithTimesAndHiddens:(NSInteger)pairCount,...;
 + (NSArray *)keyFramesWithTimesAndColors:(NSInteger)pairCount,...;
 + (NSArray *)keyFramesWithTimesAndCenter:(NSInteger)pairCount,...;
++ (NSArray *)keyFramesWithTimesAndTransforms:(NSInteger)pairCount,...;
 
 + (instancetype)keyFrameWithTime:(NSInteger)time andAlpha:(CGFloat)alpha;
 + (instancetype)keyFrameWithTime:(NSInteger)time andFrame:(CGRect)frame;
 + (instancetype)keyFrameWithTime:(NSInteger)time andHidden:(BOOL)hidden;
 + (instancetype)keyFrameWithTime:(NSInteger)time andColor:(UIColor*)color;
 + (instancetype)keyFrameWithTime:(NSInteger)time andCenter:(CGPoint)center;
++ (instancetype)keyFrameWithTime:(NSInteger)time andTransform:(CGAffineTransform)transform;
 
 - (id)initWithTime:(NSInteger)time andAlpha:(CGFloat)alpha;
 - (id)initWithTime:(NSInteger)time andFrame:(CGRect)frame;
 - (id)initWithTime:(NSInteger)time andHidden:(BOOL)hidden;
 - (id)initWithTime:(NSInteger)time andColor:(UIColor*)color;
 - (id)initWithTime:(NSInteger)time andCenter:(CGPoint)center;
+- (id)initWithTime:(NSInteger)time andTransform:(CGAffineTransform)transform;
 
 @property (assign, nonatomic) NSInteger time;
 

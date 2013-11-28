@@ -13,5 +13,6 @@
 @property (nonatomic) BOOL hidden;
 @property (nonatomic) UIColor * color;
 @property (nonatomic) CGPoint center;
+@property (nonatomic) CGAffineTransform transform;
 
 @end
