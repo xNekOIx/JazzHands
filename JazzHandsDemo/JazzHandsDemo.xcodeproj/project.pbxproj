@@ -28,6 +28,8 @@
 		03063F3B17F6B2BB007D7A97 /* IFTTTAlphaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03063F3A17F6B2BB007D7A97 /* IFTTTAlphaAnimation.m */; };
 		03063F9A17F772A1007D7A97 /* IFTTTAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03063F9717F772A1007D7A97 /* IFTTTAnimator.m */; };
 		03063F9B17F772A1007D7A97 /* IFTTTHideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03063F9917F772A1007D7A97 /* IFTTTHideAnimation.m */; };
+		22377865184772D200F70847 /* IFTTTCenterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22377864184772D200F70847 /* IFTTTCenterAnimation.m */; };
+		22377866184772D200F70847 /* IFTTTCenterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22377864184772D200F70847 /* IFTTTCenterAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		03063F9817F772A1007D7A97 /* IFTTTHideAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFTTTHideAnimation.h; path = ../src/IFTTTHideAnimation.h; sourceTree = "<group>"; };
 		03063F9917F772A1007D7A97 /* IFTTTHideAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFTTTHideAnimation.m; path = ../src/IFTTTHideAnimation.m; sourceTree = "<group>"; };
 		03063F9F17F79D14007D7A97 /* IFTTTJazzHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFTTTJazzHands.h; path = ../src/IFTTTJazzHands.h; sourceTree = "<group>"; };
+		22377863184772D200F70847 /* IFTTTCenterAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFTTTCenterAnimation.h; path = ../src/IFTTTCenterAnimation.h; sourceTree = "<group>"; };
+		22377864184772D200F70847 /* IFTTTCenterAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFTTTCenterAnimation.m; path = ../src/IFTTTCenterAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 				03063F3A17F6B2BB007D7A97 /* IFTTTAlphaAnimation.m */,
 				03063F9817F772A1007D7A97 /* IFTTTHideAnimation.h */,
 				03063F9917F772A1007D7A97 /* IFTTTHideAnimation.m */,
+				22377863184772D200F70847 /* IFTTTCenterAnimation.h */,
+				22377864184772D200F70847 /* IFTTTCenterAnimation.m */,
 			);
 			name = JazzHands;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				03063F3817F6B1E3007D7A97 /* IFTTTFrameAnimation.m in Sources */,
 				03063EDB17F5FAAD007D7A97 /* main.m in Sources */,
 				03063F3B17F6B2BB007D7A97 /* IFTTTAlphaAnimation.m in Sources */,
+				22377865184772D200F70847 /* IFTTTCenterAnimation.m in Sources */,
 				03063F2917F61DBE007D7A97 /* IFTTTAnimationFrame.m in Sources */,
 				03063F1217F5FB91007D7A97 /* IFTTTAnimatedScrollViewController.m in Sources */,
 			);
@@ -314,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03063EF417F5FAAD007D7A97 /* JazzHandsDemoTests.m in Sources */,
+				22377866184772D200F70847 /* IFTTTCenterAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

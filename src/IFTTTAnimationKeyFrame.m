@@ -118,6 +118,33 @@
     }
 }
 
++ (NSArray *)keyFramesWithTimesAndCenter:(NSInteger)pairCount,...
+{
+    va_list argumentList;
+    NSInteger time;
+    CGPoint center;
+    if (pairCount > 0) {
+        NSMutableArray *keyFrames = [NSMutableArray arrayWithCapacity:pairCount];
+        
+        va_start(argumentList, pairCount);
+        
+        for (int i=0; i<pairCount; i++) {
+            time = va_arg(argumentList, NSInteger);
+            center = va_arg(argumentList, CGPoint);
+            IFTTTAnimationKeyFrame *keyFrame = [IFTTTAnimationKeyFrame keyFrameWithTime: time
+                                                                              andCenter: center];
+            [keyFrames addObject:keyFrame];
+        }
+        
+        va_end(argumentList);
+        
+        return [NSArray arrayWithArray:keyFrames];
+    }
+    else {
+        return nil;
+    }
+}
+
 + (instancetype)keyFrameWithTime:(NSInteger)time andAlpha:(CGFloat)alpha
 {
     IFTTTAnimationKeyFrame *keyFrame = [[[self class] alloc] initWithTime: time
@@ -143,6 +170,13 @@
 {
     IFTTTAnimationKeyFrame *keyFrame = [[[self class] alloc] initWithTime: time
                                                                  andColor: color];
+    return keyFrame;
+}
+
++ (instancetype)keyFrameWithTime:(NSInteger)time andCenter:(CGPoint)center
+{
+    IFTTTAnimationKeyFrame *keyFrame = [[[self class] alloc] initWithTime: time
+                                                                andCenter: center];
     return keyFrame;
 }
 
@@ -196,6 +230,17 @@
     
     if (self) {
         self.color = color;
+    }
+    
+    return self;
+}
+
+- (id)initWithTime:(NSInteger)time andCenter:(CGPoint)center
+{
+    self = [self initWithTime:time];
+    
+    if (self) {
+        self.center = center;
     }
     
     return self;
